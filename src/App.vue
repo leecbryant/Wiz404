@@ -1,26 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <nav class="navbar navbar-dark justify-content-between" style="background-color: #3d2566;">
+    <a class="navbar-brand" href="#">
+      <img src="./assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Wizard404 <i class="subtitle"> A Modern Wizard101 Wiki </i>
+    </a>
+    <!-- Search Will Definitely Be a Necessity in the Future -->
+    <!-- <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+  </nav>
+  <router-view />
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  body {
+    background-color: #383838;
+  }
+  .subtitle {
+    font-size: 0.75em;
+    margin-left: 0.5em;
+  }
 </style>
